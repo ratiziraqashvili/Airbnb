@@ -10,6 +10,7 @@ interface ModalProps {
   onSubmit: () => void;
   title?: string;
   body?: React.ReactElement;
+  footer?: React.ReactElement;
   actionLabel: string;
   disabled?: boolean;
   secondaryAction?: () => void;
@@ -22,6 +23,7 @@ const Modal = ({
   onSubmit,
   title,
   body,
+  footer,
   actionLabel,
   disabled,
   secondaryAction,
@@ -96,6 +98,7 @@ const Modal = ({
                     onClick={handleSubmit}
                   />
                 </div>
+                {footer}
               </div>
             </div>
           </div>
