@@ -6,7 +6,10 @@ const nextConfig = {
             "lh3.googleusercontent.com",
             "res.cloudinary.com"
         ]
-    }
+    },
+    experimental: {
+        appDir: true,
+      },
 }
 
 module.exports = nextConfig
