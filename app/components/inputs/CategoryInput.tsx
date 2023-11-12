@@ -17,7 +17,7 @@ const CategoryInput = ({
 }: CategoryInputProps) => {
   return (
     <div
-      onClick={() => onClick(label)}
+      onClick={() => onClick && onClick(label)}
       className={`rounded-xl border-2 p-4 flex flex-col gap-3 hover:border-black transition cursor-pointer ${
         selected ? "border-black" : "border-neutral-200"
       }`}
